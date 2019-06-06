@@ -1,0 +1,134 @@
+// Global
+body {
+	background: #fff;
+	color: #000;
+}
+
+
+a:hover {
+	text-decoration: none;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+.hidden{
+	// display: none !important;
+	visibility: hidden !important;
+}
+
+*, ::after, ::before {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+// Colors
+$salmon:#be3a26;
+$rosa-claro: #efe2db;
+$branco: #fff;
+$rosa: #d19d9a;
+$cinza: #9c9aa0;
+$cinza-medio: #bfbfbf;
+$preto-medio: #38373a;
+
+
+// Classes de Cores
+.salmon {color: $salmon !important;}
+.rosa-claro {color: $rosa-claro;}
+.branco {color: $branco !important;}
+.rosa {color: $rosa !important;}
+.cinza {color: $cinza;}
+.cinza-medio { color:$cinza-medio;}
+.preto-medio { color:$preto-medio; }
+
+
+// Classes de Fontes
+
+@font-face {
+	font-family: 'Poppins Regular';
+	font-display: auto;
+  src: url('../webfonts/poppins-regular-webfont.woff') format('woff'), 
+  url('../webfonts/poppins-regular-webfont.woff2') format('woff2'); 
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Poppins Medium';
+	font-display: auto;
+  src: url('../webfonts/poppins-medium-webfont.woff') format('woff'), 
+  url('../webfonts/poppins-medium-webfont.woff2') format('woff2'); 
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Poppins Black';
+	font-display: auto;
+  src: url('../webfonts/poppins-black-webfont.woff') format('woff'), 
+  url('../webfonts/poppins-black-webfont.woff2') format('woff2'); 
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+.poppins-regular {font-family: 'Poppins Regular', sans-serif; font-style: normal;}
+.poppins-medium {font-family: 'Poppins Medium', sans-serif; font-style: normal;}
+.poppins-black {font-family: 'Poppins Black', sans-serif; font-style: normal;}
+
+
+// Classes de Tamanho de Fontes
+.fs-12 {font-size: 12px;}
+.fs-14 {font-size: 14px;}
+.fs-15 {font-size: 15px;}
+.fs-20 {font-size: 20px;}
+.fs-22 {font-size: 22px;}
+.fs-32 {font-size: 32px;}
+.fs-40 {font-size: 40px;}
+.fs-183 {font-size: 183px;}
+.fs-200 {font-size: 200px;}
+
+
+// Espaçamentos
+.mt-15 {margin-top: 15px;}
+.mb-15 {margin-bottom: 15px;}
+.mr-15 {margin-right: 15px;}
+.ml-15 {margin-left: 15px;}
+
+.mt-30 {margin-top: 30px;}
+.mb-30 {margin-bottom: 30px;}
+.ml-30 {margin-left: 30px;}
+.mr-30 {margin-right: 30px;}
+
+.mt-45 {margin-top: 45px;}
+.mb-45 {margin-bottom: 45px;}
+
+.mt-60 {margin-top: 60px;}
+.mb-60 {margin-bottom: 60px;}
+
+.mt-100 {margin-top: 100px;}
+.mt-120 {margin-top: 120px;}
+.mb-120 {margin-bottom: 120px;}
+
+.p-15 {padding: 15px;}
+.pt-15 {padding-top: 15px;}
+.pb-15 {padding-bottom: 15px;}
+.pl-15 {padding-left: 15px;}
+.pr-15 {padding-right: 15px;}
+
+.pt-30 {padding-top: 30px;}
+.pb-30 {padding-bottom: 30px;}
+.pl-30 {padding-left: 30px;}
+.pr-30 {padding-right: 30px;}
+
+.pt-45 {padding-top: 45px;}
+.pb-45 {padding-bottom: 45px;}
+.pl-45 {padding-left: 45px;}
+
+.pt-60 {padding-top: 60px !important;}
+.pb-60 {padding-bottom: 60px !important;}
+.pr-60 {padding-right: 60px !important;}
