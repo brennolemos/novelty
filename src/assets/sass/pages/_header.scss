@@ -1,0 +1,76 @@
+// Header
+
+.header {
+    background: linear-gradient(135deg, #0068B3 0%, #0088cb 100%);
+    padding: 23px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+}
+
+.container--header {
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.button-menu {
+    cursor: pointer;
+    width: 24px;
+    height: 17px;
+    // background-color: $amarelo;
+    border-top: 3px solid $branco;
+    display: inline-block;
+    position: relative;
+    -webkit-backface-visibility: hidden;
+    transition: all .3s ease;
+
+    &::before {
+        content: '';
+        display: block;
+        height: 3px;
+        background: $branco;
+        position: relative;        
+        transition: transform .3s ease;
+        top: 4px;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        width: 15px;
+        height: 3px;
+        background: $branco;
+        position: relative;        
+        transition: transform .3s ease;
+        top: 8px;
+    }
+}
+
+.is-active {
+    .button-menu {
+        border-top: 3px solid transparent;
+        &::before {
+            top: 4px;
+            transform: rotate(135deg);
+            background: $branco;
+        }
+    
+        &::after {
+            top: 1px;
+            transform: rotate(45deg);
+            background: $branco;
+            width: 100%;
+        }
+    }
+}
+
+.search__btn {
+    background: transparent;
+    border: none;
+    outline: none;
+}
